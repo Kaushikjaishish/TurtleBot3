@@ -30,6 +30,7 @@ source install/setup.bash
 
 ## Set TurtleBot3 model:
 echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
