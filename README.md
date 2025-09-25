@@ -46,3 +46,27 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=true
 ## Run the AutoMove node:
 cd ~/ros2_ws
 ros2 run turtlebot3_nav2_autorun auto_move
+
+
+## Verification
+After following the setup and running the commands, you should see:
+
+## Gazebo World Loads
+A TurtleBot3 model (burger) appears in the default turtlebot3_world Gazebo environment.
+Obstacles such as walls, boxes, and furniture are visible.
+
+## Nav2 Launches Successfully
+In RViz2, you will see the map, robot model, and Nav2 panels (Goal tool, Path visualization).
+No major errors (red warnings) in the terminal about lifecycle nodes failing.
+
+## AutoMove Node Runs
+When you run:
+ros2 run turtlebot3_nav2_autorun auto_move
+you should see logs like:
+
+[INFO] [auto_move]: New random goal selected: (x, y)
+[INFO] [navigate_to_pose_action_client]: Sending goal to Nav2
+
+## Robot Behavior
+The robot starts moving towards random positions in the environment.
+It avoids obstacles and keeps exploring continuously without manual input.
