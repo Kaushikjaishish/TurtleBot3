@@ -2,6 +2,7 @@
 Autonomous random navigation node for TurtleBot3 using Navigation2 (Nav2) in Gazebo.
 The robot continuously selects random goals and navigates without colliding with obstacles.
 
+https://youtu.be/To6L7cOUJcg
 
 # turtlebot3_nav2_autorun
 
